@@ -1,0 +1,86 @@
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+var _jsxFileName = '/home/akeel/Code/ReactNativeAuth/App.js';
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactNative = require('react-native');
+
+var _reactNavigation = require('react-navigation');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var HomeScreen = function HomeScreen(_ref) {
+	var navigation = _ref.navigation;
+	return _react2.default.createElement(
+		_reactNative.View,
+		{ style: { flex: 1, alignItems: 'center', justifyContent: 'center' }, __source: {
+				fileName: _jsxFileName,
+				lineNumber: 7
+			}
+		},
+		_react2.default.createElement(
+			_reactNative.Text,
+			{
+				__source: {
+					fileName: _jsxFileName,
+					lineNumber: 8
+				}
+			},
+			'Home Screen'
+		),
+		_react2.default.createElement(_reactNative.Button, {
+			onPress: function onPress() {
+				return navigation.navigate('Login');
+			},
+			title: 'Login', __source: {
+				fileName: _jsxFileName,
+				lineNumber: 9
+			}
+		})
+	);
+};
+
+var LoginScreen = function LoginScreen() {
+	return _react2.default.createElement(
+		_reactNative.View,
+		{ style: { flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'powderblue' }, __source: {
+				fileName: _jsxFileName,
+				lineNumber: 16
+			}
+		},
+		_react2.default.createElement(
+			_reactNative.Text,
+			{
+				style: { fontSize: 42 }, __source: {
+					fileName: _jsxFileName,
+					lineNumber: 17
+				}
+			},
+			'Login'
+		),
+		_react2.default.createElement(_reactNative.TextInput, {
+			editable: true,
+			placeholder: 'Username',
+			returnKeyType: 'next',
+			__source: {
+				fileName: _jsxFileName,
+				lineNumber: 19
+			}
+		})
+	);
+};
+
+var RootNavigator = (0, _reactNavigation.StackNavigator)({
+	Home: {
+		screen: HomeScreen
+	},
+	Login: {
+		screen: LoginScreen
+	}
+});
+
+exports.default = RootNavigator;
