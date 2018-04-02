@@ -1,27 +1,26 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, TextInput, ScrollView } from 'react-native';
-import { StackNavigator } from 'react-navigation';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import Home from './Views/home.js';
-import Login from './Views/Auth/login.js';
-import Signup from './Views/Auth/signup.js';
 
+import { AppRegistry } from 'react-native';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import devToolsEnhancer from 'remote-redux-devtools';
 
-const HomeScreen = ({ navigation }) => (<Home navigation={navigation} />);
+import AppReducer from './app/reducers/appReducer.js';
+import AppWithNavigationState from './app/navigators/appNavigator.js';
 
-const LoginScreen = () => (<Login />);
-const SignupScreen = () => (<Signup />);
+class ReduxApp extends React.Component {
+	//TODO: remove the parameter for devToolsEnhancer and use NODE_ENV instead
+	store = createStore(AppReducer, devToolsEnhancer({ realtime: true }));
 
-const RootNavigator = StackNavigator({
-	Home: {
-		screen: HomeScreen,
-	},
-	Login: {
-		screen: LoginScreen,
-	},
-	Signup: {
-		screen: SignupScreen,
+	render() {
+		return (
+			<Provider store={this.store}>
+				<AppWithNavigationState />
+			</Provider>
+		);
 	}
-});
+}
 
-export default RootNavigator;
+AppRegistry.registerComponent('ReduxApp', () => ReduxApp);
+
+export default ReduxApp;
