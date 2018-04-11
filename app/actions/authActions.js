@@ -1,12 +1,15 @@
 export const loginUser = (username, password) => {
-    if (username !== 'test') {
+    if (username === 'test' && password === 'password123') {
         return {
-            type: 'LOGINUSER'
+            type: 'LOGIN_SUCCESS',
+            user: {
+                username: username,
+                password: password
+            }
+        };
+    } else {
+        return {
+            type: 'LOGIN_FAILED'
         }
     }
-    return {
-        type: 'LOGINUSER',
-        username: username,
-        password: password
-    };
 }
