@@ -21,6 +21,10 @@ export default class TextInputLogo extends React.Component <{
 		this.state = { focused: false };
 	}
 
+	toggleFocus = () => {
+		this.setState({ focused: !this.state.focused })
+	}
+
 	render() {
 		const {
 			title,
@@ -29,9 +33,6 @@ export default class TextInputLogo extends React.Component <{
 			onChangeMethod
 		} = this.props;
 
-		const toggleFocus = () => {
-			this.setState( { focused : !this.state.focused } )
-		}
 
 		const error = () => {
 			if (this.state.error)
@@ -59,8 +60,8 @@ export default class TextInputLogo extends React.Component <{
 						editable={true}
 						placeholder={title}
 						secureTextEntry={secure}
-						onFocus={toggleFocus}
-						onBlur={toggleFocus}
+						onFocus={this.toggleFocus}
+						onBlur={this.toggleFocus}
 						onChangeText={(text) => (this.props.validate) ? 
 							this.props.validate(text, onChangeMethod, this) : 
 							onChangeMethod(text)}

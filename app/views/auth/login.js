@@ -16,7 +16,7 @@ import {
 	_minimumPasswordLength
 } from '../../helpers/validation';
 
-class Login extends React.Component {
+export class Login extends React.Component {
 	constructor(props) {
 		super(props);
 

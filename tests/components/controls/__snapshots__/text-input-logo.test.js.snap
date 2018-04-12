@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`focus should change styling 1`] = `
+<View
+  style={
+    Object {
+      "marginBottom": 15,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderBottomWidth": 1,
+        "borderColor": "#5fba7d",
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#5fba7d",
+            "fontSize": 20,
+          },
+          Object {
+            "padding": 10,
+          },
+          Object {
+            "fontFamily": "awesome",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+        ]
+      }
+    >
+      
+    </Text>
+    <TextInput
+      allowFontScaling={true}
+      editable={true}
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onFocus={[Function]}
+      placeholder="E-mail"
+      returnKeyType="next"
+      secureTextEntry={undefined}
+      style={
+        Object {
+          "borderBottomWidth": 0,
+          "flex": 1,
+          "height": 40,
+        }
+      }
+      underlineColorAndroid="transparent"
+    />
+  </View>
+</View>
+`;
+
+exports[`should display an error message 1`] = `
+<View
+  style={
+    Object {
+      "marginBottom": 15,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderBottomWidth": 1,
+        "borderColor": "#ccc",
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#000",
+            "fontSize": 20,
+          },
+          Object {
+            "padding": 10,
+          },
+          Object {
+            "fontFamily": "awesome",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+        ]
+      }
+    >
+      
+    </Text>
+    <TextInput
+      allowFontScaling={true}
+      editable={true}
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onFocus={[Function]}
+      placeholder="E-mail"
+      returnKeyType="next"
+      secureTextEntry={undefined}
+      style={
+        Object {
+          "borderBottomWidth": 0,
+          "flex": 1,
+          "height": 40,
+        }
+      }
+      underlineColorAndroid="transparent"
+    />
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#f38383",
+      }
+    }
+  >
+    An error message
+  </Text>
+</View>
+`;
+
+exports[`should render 1`] = `
+<View
+  style={
+    Object {
+      "marginBottom": 15,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderBottomWidth": 1,
+        "borderColor": "#ccc",
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+    />
+    <TextInput
+      allowFontScaling={true}
+      editable={true}
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onFocus={[Function]}
+      placeholder="E-mail"
+      returnKeyType="next"
+      secureTextEntry={undefined}
+      style={
+        Object {
+          "borderBottomWidth": 0,
+          "flex": 1,
+          "height": 40,
+        }
+      }
+      underlineColorAndroid="transparent"
+    />
+  </View>
+</View>
+`;

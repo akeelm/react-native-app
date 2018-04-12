@@ -8,8 +8,8 @@ export function _validateEmail(email, _onChangeMethod, _this) {
     }
 }
 
-export function _minimumPasswordLength(password, _onChangeMethod, _this) {
-    let len = 6;
+export function _minimumPasswordLength(password, _onChangeMethod, _this, _len) {
+    let len = _len || 6;
     if (password.length < len) {
         _this.setState({
             error: true,

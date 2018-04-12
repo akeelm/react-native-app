@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#f3f7ff",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 0.2,
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "fontSize": 25,
+          "height": 60,
+          "paddingTop": 20,
+        }
+      }
+    >
+      Sign up
+    </Text>
+  </View>
+  <RCTScrollView
+    automaticallyAdjustContentInsets={false}
+    contentContainerStyle={undefined}
+    contentInset={
+      Object {
+        "bottom": 0,
+      }
+    }
+    enableAutomaticScroll={true}
+    enableOnAndroid={true}
+    enableResetScrollToCoords={true}
+    extraHeight={75}
+    extraScrollHeight={0}
+    getScrollResponder={[Function]}
+    handleOnScroll={[Function]}
+    keyboardDismissMode="interactive"
+    keyboardOpeningTime={250}
+    keyboardSpace={0}
+    onScroll={[Function]}
+    resetKeyboardSpace={[Function]}
+    scrollEventThrottle={1}
+    scrollForExtraHeightOnAndroid={[Function]}
+    scrollToEnd={[Function]}
+    scrollToFocusedInput={[Function]}
+    scrollToPosition={[Function]}
+    showsVerticalScrollIndicator={true}
+    viewIsInsideTabBar={false}
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+            "padding": 40,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 15,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "borderBottomWidth": 1,
+                "borderColor": "#ccc",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+            />
+            <TextInput
+              allowFontScaling={true}
+              editable={true}
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              onFocus={[Function]}
+              placeholder="E-mail"
+              returnKeyType="next"
+              secureTextEntry={undefined}
+              style={
+                Object {
+                  "borderBottomWidth": 0,
+                  "flex": 1,
+                  "height": 40,
+                }
+              }
+              underlineColorAndroid="transparent"
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "marginBottom": 15,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "borderBottomWidth": 1,
+                "borderColor": "#ccc",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+            />
+            <TextInput
+              allowFontScaling={true}
+              editable={true}
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              onFocus={[Function]}
+              placeholder="Password"
+              returnKeyType="next"
+              secureTextEntry={true}
+              style={
+                Object {
+                  "borderBottomWidth": 0,
+                  "flex": 1,
+                  "height": 40,
+                }
+              }
+              underlineColorAndroid="transparent"
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "marginBottom": 15,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "borderBottomWidth": 1,
+                "borderColor": "#ccc",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+            />
+            <TextInput
+              allowFontScaling={true}
+              editable={true}
+              onBlur={[Function]}
+              onChangeText={[Function]}
+              onFocus={[Function]}
+              placeholder="Confirm password"
+              returnKeyType="next"
+              secureTextEntry={true}
+              style={
+                Object {
+                  "borderBottomWidth": 0,
+                  "flex": 1,
+                  "height": 40,
+                }
+              }
+              underlineColorAndroid="transparent"
+            />
+          </View>
+        </View>
+        <View
+          accessibilityComponentType="button"
+          accessibilityLabel={undefined}
+          accessibilityTraits={
+            Array [
+              "button",
+              "disabled",
+            ]
+          }
+          accessible={true}
+          collapsable={undefined}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <View
+            style={
+              Array [
+                Object {},
+                Object {},
+              ]
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              disabled={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#007AFF",
+                    "fontSize": 18,
+                    "padding": 8,
+                    "textAlign": "center",
+                  },
+                  Object {
+                    "color": "#cdcdcd",
+                  },
+                ]
+              }
+            >
+              Confirm
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
